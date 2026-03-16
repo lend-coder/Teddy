@@ -19,5 +19,6 @@ docs/*
 .log
 .db
 
+
 #macos
 .DS_Store
