@@ -13,4 +13,9 @@
       <param-value>false</param-value>
     </init-param>
   </servlet>
+
+  <!-- Welcome file: serve index.html directly from the src resource base -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 </web-app>
