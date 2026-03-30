@@ -16,8 +16,13 @@ teedy-importer-macos
 teedy-importer-win.exe
 docs/*
 !docs/.gitkeep
-.log
-.db
+*.log
+*.db
+*.png
+*.gif
+*.jpg
+*.html
+*.css
 
 
 #macos
