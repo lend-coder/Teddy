@@ -1,0 +1,34 @@
+<project name="Docs Parent">
+  <publishDate position="left" />
+  <version position="left" />
+
+  <body>
+    <menu name="Modules">
+      <item name="Docs Core" href="../../docs-core/target/site/index.html" />
+      <item name="Docs Web Commons" href="../../docs-web-common/target/site/index.html" />
+      <item name="Docs Web" href="../../docs-web/target/site/index.html" />
+    </menu>
+
+    <menu name="Project Documentation">
+      <item name="Project Information" href="project-info.html" collapse="true">
+        <item name="Dependency Convergence" href="dependency-convergence.html" />
+        <item name="Maven Coordinates" href="dependency-info.html" />
+        <item name="Dependency Management" href="dependency-management.html" />
+        <item name="About" href="index.html" />
+        <item name="Project Modules" href="modules.html" />
+        <item name="Plugin Management" href="plugin-management.html" />
+        <item name="Plugins" href="plugins.html" />
+        <item name="Source Code Management" href="scm.html" />
+        <item name="Summary" href="summary.html" />
+      </item>
+
+      <item name="Project Reports" href="project-reports.html" collapse="true">
+        <item name="PMD" href="pmd.html" />
+        <item name="CPD" href="cpd.html" />
+        <item name="Surefire Report" href="surefire-report.html" />
+        <item name="JaCoCo" href="../../docs-core/target/site/jacoco/index.html" />
+        <item name="JaCoCo Aggregate" href="jacoco-aggregate/index.html" />
+      </item>
+    </menu>
+  </body>
+</project>
