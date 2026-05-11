@@ -2,6 +2,12 @@
   <publishDate position="left" />
   <version position="left" />
 
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-fluido-skin</artifactId>
+    <version>2.1.0</version>
+  </skin>
+
   <body>
     <menu name="Modules">
       <item name="Docs Core" href="../../docs-core/target/site/index.html" />
