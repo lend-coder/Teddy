@@ -50,31 +50,4 @@ pipeline {
             junit '**/target/surefire-reports/*.xml'
         }
     }
-}def runMaven(String args) {
-    if (isUnix()) {
-        sh "mvn ${args}"
-    } else {
-        bat "mvn ${args}"
-    }
-}
-
-pipeline {
-    agent any
-    stages {
-        stage('Build and Test') {
-            steps {
-                script {
-                    runMaven('clean verify -Dmaven.test.failure.ignore=true')
-                }
-            }
-        }
-    }
-    post {
-        always {
-            archiveArtifacts artifacts: '**/target/site/**/*.*', allowEmptyArchive: true, fingerprint: true
-            archiveArtifacts artifacts: '**/target/**/*.jar', allowEmptyArchive: true, fingerprint: true
-            archiveArtifacts artifacts: '**/target/**/*.war', allowEmptyArchive: true, fingerprint: true
-            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
-        }
-    }
 }
