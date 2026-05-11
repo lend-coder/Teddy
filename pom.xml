@@ -57,6 +57,7 @@
 
     <!-- Plugins version -->
     <org.apache.maven.plugins.maven-antrun-plugin.version>3.1.0</org.apache.maven.plugins.maven-antrun-plugin.version>
+    <org.apache.maven.plugins.maven-javadoc-plugin.version>3.12.0</org.apache.maven.plugins.maven-javadoc-plugin.version>
     <org.apache.maven.plugins.maven-jar-plugin.version>3.3.0</org.apache.maven.plugins.maven-jar-plugin.version>
     <org.apache.maven.plugins.maven-pmd-plugin.version>3.22.0</org.apache.maven.plugins.maven-pmd-plugin.version>
     <org.apache.maven.plugins.maven-war-plugin.version>3.3.2</org.apache.maven.plugins.maven-war-plugin.version>
@@ -95,6 +96,66 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>${org.apache.maven.plugins.maven-war-plugin.version}</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${org.apache.maven.plugins.maven-javadoc-plugin.version}</version>
+        <configuration>
+          <tags>
+            <tag>
+              <name>api</name>
+              <placement>a</placement>
+              <head>API:</head>
+            </tag>
+            <tag>
+              <name>apiDefine</name>
+              <placement>a</placement>
+              <head>API Define:</head>
+            </tag>
+            <tag>
+              <name>apiDescription</name>
+              <placement>a</placement>
+              <head>API Description:</head>
+            </tag>
+            <tag>
+              <name>apiError</name>
+              <placement>a</placement>
+              <head>API Error:</head>
+            </tag>
+            <tag>
+              <name>apiGroup</name>
+              <placement>a</placement>
+              <head>API Group:</head>
+            </tag>
+            <tag>
+              <name>apiName</name>
+              <placement>a</placement>
+              <head>API Name:</head>
+            </tag>
+            <tag>
+              <name>apiParam</name>
+              <placement>a</placement>
+              <head>API Param:</head>
+            </tag>
+            <tag>
+              <name>apiPermission</name>
+              <placement>a</placement>
+              <head>API Permission:</head>
+            </tag>
+            <tag>
+              <name>apiSuccess</name>
+              <placement>a</placement>
+              <head>API Success:</head>
+            </tag>
+            <tag>
+              <name>apiVersion</name>
+              <placement>a</placement>
+              <head>API Version:</head>
+            </tag>
+          </tags>
+        </configuration>
       </plugin>
 
       <plugin>
